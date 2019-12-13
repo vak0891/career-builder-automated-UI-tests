@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  test-chrome:
+  build:
     docker:
       - image: circleci/node:10-browsers
     parallelism: 3
@@ -93,7 +93,7 @@ workflows:
   version: 2
   commit:
     jobs:
-      - test-chrome
+      - build
   schedule-workflow:
     triggers:
     - schedule:
@@ -103,4 +103,4 @@ workflows:
             only:
             - master
     jobs:
-    - test-chrome
+    - build
