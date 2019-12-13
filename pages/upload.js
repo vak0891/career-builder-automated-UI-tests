@@ -11,6 +11,6 @@ export default class Upload {
     this.workExperienceCompany = element(by.xpath("(//div[contains(.,'Cloud Clearwater')])[14]"));
     this.education = element(by.xpath("//h3[contains(.,'Hawaii Western')]"));
     this.deleteResume = $('.delete-resume');
-    this.deleteConfirm = element(by.xpath("//h3[contains(.,'You haven't added a resume yet')]"));
+    this.deleteConfirm = $('#post-new-resume'); // element(by.xpath("//h3[contains(.,'You haven't added a resume yet')]"));
   }
 }

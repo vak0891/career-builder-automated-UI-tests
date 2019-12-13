@@ -72,5 +72,6 @@ Then(/^I delete the resume$/, async () => {
 });
 
 Then(/^I verify that the resume has been deleted$/, async () => {
-  await utils.checkText(upload.deleteConfirm, "You haven't added a resume yet");
+  await browser.wait(EC.visibilityOf(upload.deleteConfirm), 10000);
+  await utils.checkTextContent(upload.deleteConfirm, 'Add a New Resume');
 });
