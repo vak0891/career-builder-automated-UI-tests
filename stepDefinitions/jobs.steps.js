@@ -1,17 +1,9 @@
 import { browser } from 'protractor';
 import { Then, setDefaultTimeout } from 'cucumber';
-import Globals from '../support/globals';
-import Constants from '../support/constants';
 import Jobs from '../pages/jobs';
-import Utils from '../support/util';
 
-const globals = new Globals();
-const constants = new Constants();
-const utils = new Utils();
 const jobs = new Jobs();
 const EC = browser.ExpectedConditions;
-
-const { expect } = globals;
 
 setDefaultTimeout(600 * 1000);
 
