@@ -18,5 +18,10 @@ export default class Search {
     this.payOptionSelected = element(
       by.xpath("//div[@class='filter-title'][contains(.,'$100,000+')]"),
     );
+    this.saveJobSelected = element(
+      by.xpath("(//a[@data-gtm='jrp-job-list|save-link-modal-prompt'])[2]"),
+    );
+    this.jobSavedListed = element(by.xpath("//span[@class='job-count-menu'][contains(.,'1 Job')]"));
+    this.unselectJobSaved = element(by.xpath("(//a[contains(@data-method,'delete')])[1]"));
   }
 }

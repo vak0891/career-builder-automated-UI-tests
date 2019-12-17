@@ -60,6 +60,7 @@ Then(/^I verify if resume has been uploaded$/, async () => {
 });
 
 Then(/^I delete the resume$/, async () => {
+  await browser.wait(EC.visibilityOf(upload.deleteResume), 10000);
   await upload.deleteResume.click();
   await browser.wait(EC.alertIsPresent(), 5000);
   await browser

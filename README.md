@@ -161,11 +161,9 @@ Code structure:
 │   └── ...
 ├── .gitignore
 ├── .prettierrc
-├── Dockerfile
 ├── README.md
 ├── assets
 │   └── ...
-├── cloudbuild.yaml
 ├── config
 │   └── ...
 ├── features

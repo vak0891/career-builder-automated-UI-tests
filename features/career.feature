@@ -1,3 +1,4 @@
+@TEST_TEST-8 @TESTSET_TEST-3
 Feature: Career: Career Builder
 
     @RegressionTest @SmokeTest

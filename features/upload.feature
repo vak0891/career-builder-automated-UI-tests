@@ -1,3 +1,4 @@
+@TEST_TEST-6 @TESTSET_TEST-3
 Feature: Upload: Career Builder
 
     @RegressionTest @SmokeTest

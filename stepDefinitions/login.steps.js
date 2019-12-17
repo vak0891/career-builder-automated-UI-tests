@@ -41,6 +41,10 @@ Then(/^I enter "(.*?)" and "(.*?)" as credentials$/, async (email, password) => 
 
 Then(/^I click on the Sign In button$/, async () => {
   await signInPage.signInButton.click();
+  const url = await browser.getCurrentUrl();
+  if (url === 'https://www.careerbuilder.com/') {
+    await browser.wait(EC.visibilityOf(signInPage.menuButton), 10000);
+  }
 });
 
 Then(/^I am taken to Career Builder home page$/, async () => {
@@ -49,8 +53,9 @@ Then(/^I am taken to Career Builder home page$/, async () => {
 });
 
 Then(/^I click on Sign Out button$/, async () => {
-  await browser.wait(EC.visibilityOf(signInPage.menuButton));
+  await browser.wait(EC.visibilityOf(signInPage.menuButton), 10000);
   await signInPage.menuButton.click();
+  await browser.wait(EC.visibilityOf(signInPage.signOutButton), 10000);
   await signInPage.signOutButton.click();
   await browser.wait(EC.titleContains(constants.cbHomePageTitle), 10000);
 });

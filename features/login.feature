@@ -1,4 +1,4 @@
-@TEST_TEST-1476
+@TEST_TEST-7 @TESTSET_TEST-3
 Feature: Authentication: Career Builder
 
     @RegressionTest @SmokeTest
@@ -12,6 +12,7 @@ Feature: Authentication: Career Builder
       Then I click on Sign Out button
       Then I am taken to Career Builder home page
 
+    @TEST_TEST-24 @TESTSET_TEST-3
     @RegressionTest @SmokeTest
     Scenario: Invalid entry checks for Login
       Given I open CareerBuilder
