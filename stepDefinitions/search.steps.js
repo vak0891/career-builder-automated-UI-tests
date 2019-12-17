@@ -70,7 +70,11 @@ Then(/^I see that the job saved is listed on the right top corner$/, async () =>
 });
 
 Then(/^I click on heart icon of job saved to remove from saved list$/, async () => {
-  await search.unselectJobSaved.click();
+  await browser
+    .actions()
+    .mouseMove(search.unselectJobSaved)
+    .click()
+    .perform();
   await browser.wait(EC.invisibilityOf(search.unselectJobSaved), 10000);
 });
 
