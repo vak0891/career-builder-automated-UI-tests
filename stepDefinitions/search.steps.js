@@ -79,5 +79,5 @@ Then(/^I click on heart icon of job saved to remove from saved list$/, async () 
 });
 
 Then(/^I see that the job is no longer saved and has been deselected$/, async () => {
-  await browser.wait(EC.invisibilityOf(search.jobSavedListed), 10000);
+  await browser.wait(EC.not(EC.presenceOf(search.jobSavedListed)), 10000);
 });
