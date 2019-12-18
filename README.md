@@ -179,7 +179,7 @@ Code structure:
 └── yarn.lock
 ```
 
- `.babelrc` file is where we specify which version of JS we are using, `.circle-ci` is for our continuous integration sysem, `.eslint-` files are for static code analysis, `.git` file is our version-control tool, `.gitignore` is were you add files you never want to commit, `.prettierrc` is our code formatter tool, `Dockerfile` along with `cloudbuild.yaml` are the file we use to build the project on google cloud, `package.json` is the file where we add our dependencies and finally `yarn.lock` is the file created in order to get consistent install across machines.
+ `.babelrc` file is where we specify which version of JS we are using, `.circle-ci` is for our continuous integration sysem, `.eslint-` files are for static code analysis, `.git` file is our version-control tool, `.gitignore` is were you add files you never want to commit, `.prettierrc` is our code formatter tool, `package.json` is the file where we add our dependencies and finally `yarn.lock` is the file created in order to get consistent install across machines.
 
 - **assets** - This dir contains any files used on in the test runs
 - **config** - Is where we add any configuration files for test runs
