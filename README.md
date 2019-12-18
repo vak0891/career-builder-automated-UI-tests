@@ -1,6 +1,6 @@
 # Career Builder UI Test Automation
 
->This guide assumes you have google chrome and firefox installed.
+>This guide assumes you have google chrome installed.
 
 ## Pre-requisites
 
@@ -65,7 +65,7 @@ java --version
 
 #### Connecting directly to the browsers driver
 
-For this you will need to have chromedriver installed for google chrome and gecko driver for firefox.
+For this you will need to have chromedriver installed for google chrome.
 
 #### Chromedriver macOS
 
@@ -125,10 +125,6 @@ yarn run webdriver-start
 Start the tests on chrome:
 ```
 yarn test-chrome
-```
-Start the tests on firefox:
-```
-yarn test-firefox
 ```
 That should start running the tests and you should start seeing the test logs and results ✨
 
